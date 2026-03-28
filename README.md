@@ -27,6 +27,7 @@ Thanks → "Thank you"
 Speak simple commands like:
 
 "Open Chrome"
+
 "Open Camera"
 
 ⚠️ Only predefined commands in commands.json will execute.
@@ -35,6 +36,7 @@ Speak simple commands like:
 No advanced AI understanding
 Requires exact or close command match
 Limited conversation capability
+
 👨‍💻 Author
 
 Devyani G
