@@ -31,12 +31,14 @@ def main():
             # Create a simple default icon if not found
             try:
                 from PIL import Image
-                img = Image.new('RGB', (96, 96), color='purple')
-                img.save(icon_path)
-                logger.info(f"Created default icon: {icon_path}")
             except ImportError:
                 logger.error("PIL not available for creating default icon")
+                logger.info("Please install Pillow: pip install Pillow")
                 sys.exit(1)
+            
+            img = Image.new('RGB', (96, 96), color='purple')
+            img.save(icon_path)
+            logger.info(f"Created default icon: {icon_path}")
         
         # Initialize GUI
         logger.info("Creating GUI...")

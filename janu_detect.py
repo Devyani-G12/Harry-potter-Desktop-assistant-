@@ -1,9 +1,23 @@
-import sounddevice as sd
-import numpy as np
+try:
+    import sounddevice as sd
+except ImportError:
+    print("Warning: sounddevice module not found. Install with: pip install sounddevice")
+    sd = None
+
+try:
+    import numpy as np
+except ImportError:
+    print("Warning: numpy module not found. Install with: pip install numpy")
+    np = None
+
 import time
 import threading
 import queue
-from whisper import load_model
+try:
+    from whisper import load_model
+except ImportError:
+    print("Warning: whisper module not found. Install with: pip install openai-whisper")
+    load_model = None
 
 from j_commands import execute_command
 from j_conversation import basic_conversation
