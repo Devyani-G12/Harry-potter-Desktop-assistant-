@@ -1,0 +1,16 @@
+{
+    "wake_words": [
+        "harry",
+        "potter",
+        "dev",
+        "assistant"
+    ],
+    "audio_sample_rate": 16000,
+    "audio_buffer_seconds": 3,
+    "whisper_model": "tiny",
+    "ui_alpha": 0.95,
+    "ui_theme": "dark",
+    "auto_start": true,
+    "debug_mode": false,
+    "max_retries": 3
+}
